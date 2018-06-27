@@ -5,14 +5,14 @@
         <headNav></headNav>
       </el-header>
       <el-container>
-        <el-aside width="200px">Aside</el-aside>
-        <el-container>
-          <el-main>
-            <router-view/>
-          </el-main>
-        </el-container>
+        <el-aside width="180px">
+          <router-view name='left'></router-view>
+        </el-aside>
+        <el-main>
+          <router-view name='main'></router-view>
+        </el-main>
       </el-container>
-      <el-footer id='footer'>
+      <el-footer id='footer' height='25px'>
           <footers></footers>
       </el-footer>
     </el-container>
@@ -20,21 +20,17 @@
 </template>
 
 <script>
-import footers from '../footer/footer'  
+import footers from '../footer/footer'
 import headNav from '../header/business'
 export default {
   data () {
     return {
-
     }
   },
   mounted: function () {
     var oderheight = document.body.clientHeight
     document.getElementById('order-list').style.height = oderheight + 'px'
-    document.getElementById('footer').style.height = '25px'
     document.getElementById('headers').style.padding = '0px'
-    console.log ( oderheight );
-
   },
   components: {
     footers,
@@ -61,7 +57,7 @@ body{
     line-height: 25px;
   }
   .el-aside {
-    background-color: #D3DCE6;
+    background-color: #eee;
     color: #333;
     text-align: center;
     line-height: 200px;
