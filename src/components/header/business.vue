@@ -12,7 +12,6 @@
             <ul class='list-unstyle list-inline'>
                 <li class='header checkMinMenu'>
                   <router-link to='/leftnav'>业务平台</router-link>
-          
                 </li>
                 <li class='header '>
                     <router-link to=''>统计分析</router-link>

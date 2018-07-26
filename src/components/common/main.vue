@@ -67,6 +67,7 @@ body{
     color: #333;
     text-align: center;
     line-height: 160px;
+    padding: 5px
   }
   body > .el-container {
     margin-bottom: 40px;

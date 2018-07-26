@@ -1,14 +1,15 @@
 <template>
   <div id='leftnav '>
     <el-menu>
-      <el-menu-item>
+      <el-menu-item index='1'>
         <router-link to='/setion'>病人入院</router-link>
         <span>></span>
       </el-menu-item>
-      <el-menu-item>选项1
+      <el-menu-item>
+          <router-link to='/dmo2'>预交款管理</router-link>
         <span>></span>
       </el-menu-item>
-      <el-menu-item>选项1
+      <el-menu-item>收费管理
         <span>></span>
       </el-menu-item>
     </el-menu>
@@ -16,8 +17,6 @@
 </template>
 
 <script>
-
-
 </script>
 
 <style scoped>
